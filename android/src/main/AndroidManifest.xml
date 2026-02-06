@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cbr.sbp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" /><!--нужно, чтобы загрузить банки поддерживаемые ссылку nspk.ru-->
 
