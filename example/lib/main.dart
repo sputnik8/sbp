@@ -52,8 +52,9 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-            decoration:
-                const BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.all(Radius.circular(10))),
+            decoration: const BoxDecoration(
+                color: Colors.tealAccent,
+                borderRadius: BorderRadius.all(Radius.circular(10))),
             child: Builder(builder: (context) {
               return GestureDetector(
                 onTap: () => showModalBottomSheet(
@@ -63,7 +64,8 @@ class _MyAppState extends State<MyApp> {
                       top: Radius.circular(20),
                     ),
                   ),
-                  builder: (ctx) => SbpModalBottomSheetWidget(informations, widget.url),
+                  builder: (ctx) =>
+                      SbpModalBottomSheetWidget(informations, widget.url),
                 ),
                 child: const Text('Открыть модальное окно'),
               );
@@ -142,7 +144,8 @@ class SbpModalBottomSheetWidget extends StatelessWidget {
   final List<C2bmemberModel> informations;
   final String url;
 
-  const SbpModalBottomSheetWidget(this.informations, this.url, {Key? key}) : super(key: key);
+  const SbpModalBottomSheetWidget(this.informations, this.url, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -196,7 +199,8 @@ class SbpModalBottomSheetWidget extends StatelessWidget {
                   ),
                 );
               },
-              separatorBuilder: (BuildContext context, int index) => const SizedBox(height: 10),
+              separatorBuilder: (BuildContext context, int index) =>
+                  const SizedBox(height: 10),
             ),
           ),
           const SizedBox(height: 20),
@@ -208,5 +212,6 @@ class SbpModalBottomSheetWidget extends StatelessWidget {
   }
 
   /// передается scheme
-  FutureOr<void> openBank(String url, C2bmemberModel c2bmemberModel) async => await Sbp.openBank(url, c2bmemberModel);
+  FutureOr<void> openBank(String url, C2bmemberModel c2bmemberModel) async =>
+      await Sbp.openBank(url, c2bmemberModel);
 }

@@ -48,7 +48,7 @@ android {
             buildConfigField "String", "${constantName}", "\"${constantValue}\""
         }
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.sbp_example"
+        applicationId "com.cbr.sbp_example"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

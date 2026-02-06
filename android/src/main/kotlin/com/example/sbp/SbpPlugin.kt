@@ -1,4 +1,4 @@
-package com.example.sbp
+package com.cbr.sbp
 
 import android.annotation.SuppressLint
 import android.content.Context

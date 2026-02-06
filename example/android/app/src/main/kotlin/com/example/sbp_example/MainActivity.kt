@@ -1,4 +1,4 @@
-package com.example.sbp_example
+package com.cbr.sbp_example
 
 import io.flutter.embedding.android.FlutterActivity
 
